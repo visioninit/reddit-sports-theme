@@ -11,6 +11,7 @@ Features:
 
 User roles to consider:
 
+- Logged Out
 - Unsubscribed
 - Subscribed (submit button, should maybe be made top posts all time in subreddit)
 - Moderators
