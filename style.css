@@ -1,0 +1,2455 @@
+/*!
+   CSS for r/apple, r/applehelp, r/applemeta, and r/applepro written 
+   by Positronic_Matrix.  Modified by radium-v, BaconOverdose and Rolmos.
+
+   Version: 24 Sep. 2012 (Rolmos)
+
+   Heavily edited and reused for /r/StLouisRams 
+
+   Version: 24-sports 2013 (mrinfo)
+*/
+/*!
+ * Color Scheme
+ * BG Blue = #13264B
+ * Gold = #c9af74
+ * Retro Blue = #104E8B
+ * Retro Yello = #ffcc11
+ */
+
+/*!
+Team | W-L-T | ST | DIV | PF | PA 
+:--|:--:|:--:|:--:|:--:|:--: 
+[49ers](/r/49ers)|11-4-1|W1|3-2-1|397|273
+[Seahawks](/r/seahawks)|11-5-0| W5 | 3-3-0 | 412| 245
+**[Rams](/r/stlouisrams)**|**7**-**8**-**1**|**L1**|**4-1-1**|**299**|**348**
+[Cardinals](/r/azcardinals)|5-11-0|L2|1-5-0|250|357
+
+W | Date |  | Opponent | Result
+:--:|:--|:--:|:--|:--
+**1** | Sun 9/9 |@| [Lions     ](/r/detroitlions) | L 23-27
+**2** | Sun 9/16 |vs| [Redskins](/r/redskins) | W 31-28
+**3** | Sun 9/23 |@| [Bears](/r/chibears) | L 6-23
+**4** | Sun 9/30 |vs| [Seahawks](/r/seahawks) | W 19-13
+**5** | Thurs10/4 |vs|  [Cardinals](/r/azcardinals) | W 17-3
+**6**  | Sun 10/14 |@|  [Dolphins](/r/miamidolphins) | L 17-14
+**7** | Sun 10/21 |vs| [Packers](/r/greenbaypackers) | L 20-30
+**8** | Sun 10/28 |@ UK| [Patriots](/r/patriots) | L 7-45
+**9** | *Bye* | | |
+**10** | Sun 11/11 |@| [49ers](/r/49ers) | T 24-24
+**11** | Sun 11/18 |vs| [Jets](/r/nyjets) | L 13-27
+**12** | Sun 11/25 |@| [Cardinals](/r/azcardinals) | W 31-17
+**13** | Sun 12/2 |vs| [49ers](/r/49ers) | W 16-13
+**14** | Sun 12/9 |@| [Bills](/r/buffalobills) | W 15-12
+**15** | Sun 12/16 |vs| [Vikings](/r/minnesotavikings) | L 22-36
+**16** | Sun 12/23 |@| [Buccaneers](/r/buccaneers) | W 28-13
+**17** | Sun 12/30 |@| [Seahawks](/r/seahawks) | L 13-20
+*/
+
+.titlebox .leavemoderator,
+.side .titlebox .redditname a,
+.side .titlebox .redditname,
+.side .titlebox .tagline a.author,
+div.titlebox .subscribers span.word,
+.users-online .word,
+.side .linkinfo .date span,
+.create,
+.subtitle,
+.sidebox .spacer,
+span.rank, .side .bottom {
+    display:none;
+}
+
+.user .userkarma {
+border: 0;
+}
+
+
+/* === Top Announcement ===================================================== */
+/* 
+   The top announcement CSS code has been transmogrified into an additional 
+   button to help users move between sister subreddits.
+*/
+
+.titlebox {
+    z-index: 102;
+}
+.titlebox .usertext-body .md ol li a {
+    text-align: center;
+    font: normal 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+
+    display: block;
+    z-index: 102;
+
+    border: 0px !important;
+
+}
+
+.titlebox .usertext-body .md ol li a:hover { background-position: -102px -72px;  color: #FFF !important; }
+.titlebox .usertext-body .md ol li a:active { background-position: -102px -108px; }
+
+.titlebox .usertext-body .md ol li a:hover {
+  border-color: #D2D2D2;
+  background-color: #FFFFFF !important;
+  z-index: 102;
+}
+.titlebox form {
+  position: static;
+  z-index: 102;
+}
+.titlebox .usertext-body .md ol {
+  list-style: none;
+  position: absolute;
+  top: 45px;
+  left: 206px;
+  margin: 0;
+  padding: 0;
+  display: table;
+  z-index:102
+}
+.titlebox .usertext-body .md ol li {
+  display: inline;
+  margin: 0px;
+}
+.titlebox .usertext-body .md ol li a {
+    color: #FFFFFF !important;
+    line-height: 34px;
+    text-transform: capitalize;
+
+    display: block;
+    height: 36px;
+    background-image: url(%%Menubar-Gray-Wide%%);
+    background-position: -103px -36px;
+  text-shadow: 0px -1px 0px #383838;
+}
+.titlebox .usertext-body .md ol li:nth-child(1) a {
+    width: 100px;
+}
+.titlebox .usertext-body .md ol li:nth-child(2) a {
+    width: 100px;
+}
+
+
+/* === Body ================================================================= */
+
+body {
+    color: #666;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    word-spacing: -1px;
+    background-color: #13264B;
+}
+
+a { color: #333; }
+a:hover { color:#08C; text-decoration: none !important; }
+a:visited { color: #888; }
+a:visited:hover { color:#08C; text-decoration: none !important; }
+
+.link .title {
+    color: #333;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 20px !important;
+    word-spacing: -1px;
+
+    margin-top: 0px !important;
+    margin-bottom: 2px !important;
+}
+
+/* === Header =============================================================== */
+
+#header {
+    position:relative; 
+    height: 105px;
+    background: transparent;
+    border-bottom: 0px solid #C2C2C2;
+}
+
+#sr-header-area {
+    font: normal 10px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+}
+span.user {
+    font: normal 10px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+a.pref-lang {
+    font: normal 10px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.logout {
+    font: normal 10px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+#header-bottom-right {
+    position: absolute !important;
+    background: transparent;
+    top: 86px !important;
+    right: 17px;
+    height: 14px !important;
+    z-index: 102;
+    border-radius: 0 !important;
+}
+
+#header-bottom-right.res-navTop {
+    top: 47px !important;
+    background: #FFF;
+    border: 0px;
+    right: 20px;
+    padding-bottom: 20px;
+}
+
+/* === Apple-Style Menu Bar ================================================= */
+
+#header-bottom-left {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    padding: 16px 0 !important; 
+    z-index: -1;
+    position: absolute;
+    background-color: #c9af74;
+    border-top: 16px solid #13264B;
+    border-bottom: 16px solid #13264B;
+}
+
+a#header-img-a {
+    text-align: center;
+    font: normal 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+
+    float: left;
+    width: 80px;
+    height: 36px !important;
+
+    margin-left: 20px;
+
+    background-image: url(%%Menubar-Gray-Wide%%);
+    background-position: 0px -36px !important;
+}
+
+a:hover#header-img-a { background-position: 0px -72px !important; }
+a:active#header-img-a { background-position: 0px -108px !important; }
+
+#header-img {
+    margin: -28px auto;
+}
+
+.pagename {
+    font: normal 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, sans-serif;
+    font-variant: normal !important;
+    font-weight: normal !important;
+    text-align: center;
+    text-shadow: 0px -1px 0px #383838;
+    text-transform: capitalize;
+    line-height: 36px;
+
+    float: left;
+    width: 100px !important;
+    height: 36px !important;
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.pagename a {
+    color: #FFFFFF !important;
+    line-height: 34px;
+    text-transform: capitalize;
+    display: block;
+    height: 36px;
+    background-image: url(%%Menubar-Gray-Wide%%);
+    background-position: -103px -36px;
+}
+.pagename a:hover { background-position: -102px -72px;  color: #FFF !important; }
+.pagename a:active { background-position: -102px -108px; }
+
+.pagename.selected {
+    color: #FFFFFF;
+    line-height: 34px;
+    text-transform: capitalize;
+
+    background-image: url(%%Menubar-Gray-Wide%%);
+    background-position: -103px -36px;
+}
+
+.tabmenu {
+    text-transform: capitalize !important;
+    display: inline-block;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    z-index: -1;
+}
+
+.tabmenu ul {
+    right: 0px;
+    width: 425px !important;
+    height: 36px !important;
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 0px 0px 0px !important;
+    z-index: -1;
+}
+
+.tabmenu li {
+    list-style-type: none;
+    display: inline-block !important;
+    float: left !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tabmenu li a {
+    color: #FFFFFF !important;
+    text-shadow: 0px -1px 0px #383838;
+    font: normal 12px/34px 'Lucida Grande', 'Lucida Sans Unicode', Arial, Helvetica, sans-serif;
+    word-spacing: -1px;
+    text-align: center;
+    display: block;
+    height: 34px !important;
+    min-width: 80px !important;
+    background: url(%%Menubar-Gray-Wide%%);
+    background-position: -103px -36px;
+    border: 0px !important;
+}
+
+.tabmenu li a:hover { background-position: -102px -72px;  color: #FFF !important; }
+.tabmenu li a:active { background-position: -102px -108px; }
+
+.tabmenu li:first-child a {
+}
+
+.tabmenu li:last-child a, .pagename, .pagename a { /* The last button in the list should have rounded corners */
+}
+
+.tabmenu li.selected a {
+    background: url(%%Menubar-Gray-Wide%%) no-repeat;
+    background-position: -103px -144px;
+    line-height: 34px;
+}
+.menuarea {
+        min-height: 40px !important;
+        background:transparent;
+}
+.sitetable {
+    margin-top: 10px;
+}
+
+/* === Sidebar ============================================================== */
+
+.side {
+    width:300px;
+    z-index:0;
+    border:0 solid #B4B4B4;
+    background:url(%%side-logobg-550hx300w%%) no-repeat #c9af74;
+    margin:20px;
+    padding:0;
+    padding-top: 136px;
+}
+
+
+.side .redditname,
+.side .fancy-toggle-button,
+.side .subscribers,
+.side .users-online {
+    display:block;
+    width:100px;
+    color:#13264B;
+    margin:0!important;
+    padding:0px;
+}
+
+.side .subscribers,
+.side .users-online {
+    display:block;
+    color:#FFF;
+    margin:0!important;
+    padding:0px 10px;
+    font-size: 11px;
+    background: url(%%dot%%);
+}
+
+.side .subscribers {
+    padding-top: 10px;
+    height: 20px;
+}
+
+.side .fancy-toggle-button {
+    width: 120px;
+}
+
+.side .fancy-toggle-button a {
+    color:#FFF!important;
+    background:#13264B!important;
+    background-image: none;
+    display: none;
+}
+
+.side .fancy-toggle-button .active {
+    background: none;
+    padding: 10px;
+    border: 0!important;
+    border-radius: 0;
+    color:#FFF!important;
+    background:#13264B!important;
+    font-size: 12px;
+    font-weight: bold;
+    width: 100px;
+    display: block;
+    text-align: center;
+}
+
+.side .fancy-toggle-button .remove {
+    background: none;
+    border: 0;
+    color:#FFF!important;
+    background:#13264B!important;
+}
+
+.side .titlebox .users-online {
+    padding-bottom: 10px;
+    height: 20px;
+}
+
+.side .titlebox .flairtoggle {
+    width:100px;
+    background:#13264B!important;
+    color:#fff;
+    font-size:12px;
+    text-align:center;
+    margin:10px 0px 0px 0px;
+    padding:20px 10px 0px;
+    height: 60px;
+}
+
+.side .titlebox .flairtoggle input {
+    padding:4px;
+}
+
+.side .titlebox .tagline {
+    width:120px;
+    background:#13264B!important;
+    color:#13264B;
+    font-size:12px;
+    text-align:center;
+    margin:0px;
+    padding:20px 00px;
+    height: 30px;
+}
+
+.side .titlebox .tagline span.flair {
+    display:inline-block;
+    margin:0 auto;
+vertical-align: middle;
+}
+
+.side .titlebox .tagline a.flairselectbtn {
+    background:#c9af74;
+    color:#13264B;
+    font-weight:700;
+    display:inline-block;
+vertical-align: middle;
+padding:5px;
+height: 20px;
+}
+
+.side .titlebox .tagline a {
+    color:#FFF;
+    font-size:13px;
+    text-transform:uppercase;
+}
+
+div.titlebox {
+    background-color: #c9af74;
+    border-bottom: 1px solid #c9af74;
+}
+
+
+
+.login-form-side {
+    border-top: 0px solid #C5C5C5 !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    border-left: 0px !important;
+    background-color: #c9af74;
+    border: 0;
+    border-width: 0;
+}
+
+.login-form-side input[type="text"], .login-form-side input[type="password"] {
+    border: 0px solid #999999;
+    height: 17px;
+    margin: 10px 0 0 10px;
+    padding: 1px;
+    top: 5px;
+    width: 133px;
+}
+
+.login-form-side #remember-me, .login-form-side .submit {
+    margin: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#subButtons {
+    margin-top: -20px;
+}
+
+
+/* sidebar headers and tables */
+
+.loggedin .side a[href$="/r/stlouisrams/submit"] {
+    background-image: url(%%side-submit-SB8%%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #13264B;
+    border: 0 solid #FFFFFF !important;
+    display: block;
+    height: 260px;
+    margin-left: 130px;
+    width: 150px;
+}
+.side #search input[type="text"] {
+    background-color: #fff !important;
+    border: 0px solid !important;
+    font-size: 14px;
+    height: 20px !important;
+    width: 280px !important; 
+    padding: 0px !important;
+    margin: 0px 10px 0px 10px !important
+}
+
+.loggedin .side .usertext-body .md {
+margin-top: -270px;
+}
+.side .usertext-body .md td, th {
+    font-size: 11px;
+
+    border-color: transparent !important;
+}
+.side .usertext-body .md p {
+    margin: 0px 0px 2px 0px;
+}
+.side .usertext-body .md h1 {
+    font: bold 12px/18px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    margin: 10px 0px 0px 0px !important;
+}
+.side .usertext-body .md ul, ol {
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+.side .usertext-body .md table {
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+.side .usertext-body .md hr {
+    border: none;
+    background-color: #C8C8C8;
+    color: #C8C8C8;
+    height: 1px;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+}
+
+.side div.titlebox .subscribers span.number:after {
+    content:" Subscribers";
+}
+
+div.titlebox .subscribers span.number:before,
+.side .linkinfo .date span:after {
+    content:"";
+}
+
+
+/******************************************************
+SIDEBAR PICTURE
+***************************************************/
+.side a[href$='#potw'] {
+    background-image:url(%%keep-calm%%);
+    background-position:center;
+    width:280px;
+    height: 200px;
+    display:block;
+    top:0;
+    left:0;
+    background-repeat:no-repeat;
+    font-size:.85em;
+    cursor:default;
+    border:0 solid #fff!important;
+    content:"";
+}
+.side .usertext-body .md p strong {
+    display: block;
+    background-color: #13264B;
+    color: #FFF;
+    padding: 10px;
+    font-weight: normal;
+    text-align: right;
+}
+/******************************************************
+CAPS THREADS
+******************************************************/
+#siteTable_t3_m2pos, #siteTable_t3_mb7uw, #siteTable_t3_mb7vp, #siteTable_t3_mb7ux, #siteTable_t3_mjis4, #siteTable_t3_mjimd, #siteTable_t3_n0c41, #siteTable_t3_njhrz, #siteTable_t3_npnjq, #siteTable_t3_nyx8a, #siteTable_t3_nyx53, #siteTable_t3_ohfch {
+    text-transform: uppercase
+    }
+/* Hide downvotes from trash talk threads*/
+#siteTable_t3_nyx8a .down, #siteTable_t3_nyx53 .down, #siteTable_t3_ohfch .down {
+    display: none;
+    visibility: hidden
+    }
+
+
+/* === Search Field ========================================================= */
+
+#search input[type="text"] {
+    font-size: 14px;
+
+    width: 267px !important;
+    height: 73px !important;
+
+    margin: -15px 0px -17px -1px !important;
+    padding: 0px 0px 0px 35px !important;
+    outline: none;
+
+    background: url(%%Search-Simple%%) no-repeat transparent !important;
+    border: none !important;
+    border-style: hidden;
+    border-width: 0px;
+}
+
+#sr-header-area { 
+    height: 16px;
+    margin-left: 0px !important;
+    padding-top: 5px;
+    background-color: transparent;
+    background-color: #FFF;
+    border-bottom: 0px solid #D2D2D2;
+}
+
+.sr-bar {
+    margin-left: 0px;
+}
+#sr-more-link {
+    background: #fff;
+    padding: 0px 5px 0px 5px;
+}
+/******************************************************
+SUBSCRIBERS
+******************************************************/
+div.titlebox .subscribers span.word {
+    display: none
+    }
+.link, .commentarea {
+    overflow: hidden
+    }
+.link.last-clicked {
+    border: none;
+    }
+    
+/******************************************************
+WELCOME MESSAGE
+******************************************************/
+/*WELCOME MESSAGE*/
+.users-online .word {
+    display: none
+    }
+.users-online .number:after {
+    content: " Online"
+    }
+	
+/* === Drop-down Header Bar, Subreddits Menu ================================ */
+
+#sr-header-area .drop-choices {
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: -1px;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #FFFFFF !important;
+    border: none !important;
+
+}
+
+#sr-header-area .drop-choices a.choice { background-color: #FFFFFF; }
+#sr-header-area .drop-choices a.choice:hover { background-color: #FFFFFF; }
+
+.searchpane {
+    width: 300px !important;
+
+    margin-left: 25px !important;
+    padding: 0px !important;
+
+    background: transparent;
+    border: 0px;
+}
+#previoussearch {
+    margin-top: -10px !important;
+    margin-left: 0px !important;
+    margin-bottom: 20px !important;
+    padding: 0px !important;
+}
+
+.submit-page .content h1 {color: #FFF;}
+.submit-page  .content h1 a {color: #c9af74 !important;}
+.submit-page  .content h1 a:hover {color: #c9af74 !important;}
+.submit-page  .content h1 a:visited {color: #c9af74 !important;}
+
+.infobar {
+    color: #FFFFFF;
+    clear: left;
+    text-shadow: #000 1px 1px 1px;
+
+    width: 270px;
+    height: 63px;
+
+    margin-top: 7px !important;
+    margin-bottom: -7px !important;
+    margin-left: 0px !important;
+    padding-top: 20px !important;
+    padding-left: 20px !important;
+
+    border: 0px solid #C2C2C2;
+    border-top: 0px;
+
+}
+.infobar .md {
+    color: #000;
+    text-shadow: none;
+
+    width: 300px;
+    height: 87px;
+
+    margin: 0px !important;
+    margin-top: -20px !important;
+    margin-left: -20px !important;
+    padding: 0px !important;
+    padding-top: 20px !important;
+    padding-left: 40px !important;
+
+    background-image: none;
+    background: #F2F2F2;
+}
+div#moresearchinfo {
+    color: #FFFFFF;
+    text-shadow: #000 1px 1px 1px;
+
+    position: absolute;
+    z-index: 101;
+
+    width: 260px;
+    height: 373px;
+
+    margin-top: 0px !important;
+    margin-left: -20px !important;
+    padding-top: 0px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+
+    border: 0px solid #C2C2C2;
+    border-top: 0px;
+}
+div#moresearchinfo a {
+    color: #FFFFFF !important;
+    text-shadow: #000 1px 1px 1px;
+}
+div#moresearchinfo a:hover {
+    color: #08C !important;
+    text-shadow: #000 1px 1px 1px;
+}
+
+/* 
+   Add self submission rules to the text box itself, since folks have a 
+   great deal of difficulty reading the text right above the text box.
+*/
+.usertext-edit {
+    margin-top: 20px !important;
+}
+.roundfiled .usertext-edit {
+    padding-left: -10px !important;
+}
+
+#ELSE
+.formtabs-content .infobar {
+    background-image: none;
+}
+
+.commentarea .infobar {
+    color: #333;
+    text-shadow: none;
+    background-image: none;
+    background-color: transparent;
+}
+.commentarea .infobar a {
+    color: #08C !important;
+}
+.commentarea .infobar a:hover {
+    color:#08C !important; 
+    text-decoration: underline;
+}
+
+
+.linkinfo .score {
+    color: #FFF !important;
+    font-size: 12px !important;
+}
+.linkinfo .score .number {
+    color: #FFF !important;
+    font-size: 12px !important;
+}
+.linkinfo .score .word {
+    color: #FFF !important;
+    font-size: 12px !important;
+}
+.linkinfo .shortlink input {
+    color: #FFF !important;
+    font-size: 12px !important;
+    margin-top: 7px !important;
+    border: 0px !important;
+    background: transparent;
+}
+
+.side .linkinfo .date time:before {
+    content:"Submitted: ";
+}
+
+.comments-page .side .linkinfo {
+    background: url(%%dot%%);
+    border: 0 none;
+    color: #FFFFFF;
+    font-family: "Lucida Grande","Lucida Sans Unicode",Helvetica,Arial,Verdana,sans-serif;
+    font-size: 12px !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    margin: 10px 10px 0px;
+    padding: 10px;
+    text-shadow: none;
+    width: 260px;
+    border-radius: 0px;
+}
+
+/* Fixes 1-pixel clip at the start of flat-list */
+li.first {
+    padding-left: 1px;
+}
+
+
+
+.link .score {
+    color: #13264B !important;
+    text-align: center;
+}
+
+.usertext-body {
+    margin: 0px;
+    padding: 0px;
+    background: transparent !important;
+    border: 0px !important;
+}
+.usertext-body .md {
+    margin: 0px;
+    padding: 0px;
+    background: transparent !important;
+    border: 0px !important;
+}
+.usertext-body p a { text-decoration: none; color: #13264B; font-weight: bold;}
+.usertext-body p a:hover { text-decoration: underline !important; color: #13264B; }
+.usertext-body .md ul li a { text-decoration: none; color: #08C; }
+.usertext-body .md ul li a:hover { text-decoration: underline !important; color: #08C; }
+
+.commentarea .usertext {
+    margin-bottom: 0px !important; 
+}
+
+
+
+.md a { color: #13264B !important; }
+.md a:hover { color: #13264B !important; }
+.md a:visited { color: #13264B !important; }
+
+.flat-vert a { color: #08C !important; text-decoration: none !important; }
+.flat-vert a:hover { color: #08C !important; text-decoration: underline !important; }
+.flat-vert a:visited { color: #08C !important; }
+
+a#search_showmore { color: #FFF !important; padding: 5px 0px 5px 0px; }
+a:hover#search_showmore { color: #08C !important; }
+a:visited#search_showmore { color: #FFF !important; }
+
+#previoussearch p { padding: 5px 0px 15px 17px !important; }
+#previoussearch a#search_showmore { color: #000 !important; }
+#previoussearch a:hover#search_showmore { color: #08C !important; }
+#previoussearch a:visited#search_showmore { color: #FFF !important; } 
+
+#previoussearch div#moresearchinfo {
+    color: #333;
+    text-shadow: none;
+
+    position: absolute;
+    z-index: 101;
+
+    width: 260px;
+    height: 363px;
+
+    margin: 0px !important;
+    padding: 10px !important;
+
+    background: #FFF;
+    background-position: 0px 42px;
+    border: 1px solid #C2C2C2;
+}
+#previoussearch div#moresearchinfo a {
+    color: #333 !important;
+    text-shadow: none;
+}
+#previoussearch div#moresearchinfo a:hover {
+    color: #08C !important;
+    text-shadow: none;
+}
+
+.md blockquote {
+    color: #777;			/* #888 */
+    margin-left: 2px !important;
+    border-left: 1px solid #CCC;  	/* #369 */
+
+}
+
+a.bylink { color: #888 !important; }
+a.bylink:hover { color: #08C !important; }
+a.bylink:visited { color: #888 !important; }
+
+.remove-button a { color: #888 !important; }
+.remove-button:hover a { color: #08C !important; }
+.remove-button:visited a { color: #888 !important; }
+
+.buttons li a { color: #888 !important; }
+.buttons li a:hover { color: #08C !important; }
+.buttons li a:visited { color: #888 !important; }
+
+.comment .expand {
+    font-size: 13px;
+    width: 11px;
+    height: 11px;
+    padding-left: 0px !important; 
+}
+.comment .collapsed { padding-bottom: 0px !important; }
+
+.collapsed {
+    font-style: normal !important;
+    margin-left: -1px;
+    background: url(%%Arrow-Comment-Close-E%%) no-repeat;
+    background-position: 19px 4px;
+}
+.noncollapsed {
+    background: url(%%Arrow-Comment-Open-E%%) no-repeat;
+    background-position: 0px 4px;
+}
+
+
+/*
+p.tagline a.expand { opacity: 0; }
+div.collapsed a.expand { opacity: 0; }
+*/
+.comment a.expand { 
+    opacity: 0; 
+    /* font-size: 11px !important; */
+    color: #888 !important; 
+}
+.comment a.expand:hover { 
+    opacity: 0; 
+    /* font-size: 11px !important; */
+    background: transparent; 
+    color: #888 !important; 
+}
+.comment a.expand:visited { 
+    opacity: 0; 
+    /* font-size: 11px !important; */
+    color: #888 !important; 
+}
+
+.commentarea .author { margin-left: -5px; }
+.commentarea .collapsed .author { font-style: normal; color: #888 !important; }
+
+a.option { color: #888 !important; }
+a.option:hover { color: #08C !important; background-color: transparent !important; }
+a.option:visited { color: #888 !important; }
+
+/* -------------------------------------------------------------------------- */
+
+.spacer {
+    margin-bottom: 0px !important;
+    background-color: transparent;
+    border: 0px;
+}
+.titlebox {
+    margin: 0px;
+    padding: 10px;
+}
+.sidecontentbox {
+    line-height: 16px;
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px !important;
+    background-color: #c9af74;
+    border-top: 1px solid #C5C5C5;
+}
+.sidecontentbox a { color: #13264B !important; }
+.sidecontentbox a:hover { color: #13264B !important; text-decoration: underline !important; }
+.sidecontentbox a:visited { color: #13264B !important; }
+
+.spacer .sidecontentbox .content {
+    margin: 0px !important;
+    margin-top: 5px !important;
+    padding-top: 5px !important;
+    background: transparent;
+    border: 0px;
+}
+
+.create { display: none; }
+.subtitle { display: none; }
+.sidebox .spacer { display: none; }
+.sidebox {
+    margin: 0px 0px 0px 0px;
+    background: #c9af74;
+    border: 0px;
+}
+
+iframe#ad-frame {
+    background-color: #c9af74;
+}
+
+.side .spacer {
+    margin-top: 0px;
+    background-color: #c9af74;
+
+    z-index: -2;
+}
+
+.side .spacer #search {
+    padding: 10px 0px 0px 0px;
+    background-color: #c9af74;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+.account-activity-box {
+    padding: 5px 0px 10px 0px;
+
+    background-color: #c9af74;
+    background-position: center bottom;
+
+
+}
+
+
+.spacer .subtitle {
+    background: transparent !important;
+}
+.sidecontentbox .content {
+    background: transparent !important;
+    border: 0px;
+}
+
+.icon-menu a {
+    background: none no-repeat scroll 0% 50%;
+}
+.sidecontentbox .content .gadget {
+    background-color: #fff;
+}
+.gadget .midcol {
+    width:35px;
+    margin:0;
+    background-color: #fff;
+}
+.nub { background: transparent !important; }
+.reddit-link-end { padding: 0px !important; }
+.leavemoderator-button {
+    display: none;
+    background: transparent !important;
+    margin: 0px 0px 0px -17px !important;
+}
+
+.morelink, .morelink:hover {
+    margin: 10px 10px 0px 10px !important;
+    padding: 0px 0px 0px 0px !important;
+    border: 0px solid;
+    background: #13264B;
+    font-weight: normal;
+    letter-spacing: 0px;
+}
+
+.morelink a {
+ color: #FFF;
+}
+.morelink a:hover {
+ color: #C9AF74;
+}
+
+/* === Content ============================================================== */
+
+
+/* Better spacing for the usertext-edit textarea */
+div.usertext-edit {
+    padding: 10px 10px 0px 2px;
+}
+
+/* Better expando-button alignment with dual sizes */
+.entry .toggleImage.expando-button {
+    margin: 1px 4px 0px 0px;
+    padding: 0px;
+}
+.entry .expando-button {
+    margin: 1px 4px 0px 0px;
+    padding: 0px;
+}
+
+.promotedlink {
+    margin-bottom: 1px !important;
+    padding-left: 17px !important;
+    background: transparent !important;
+    border: 0px !important;
+}
+.sponsored-tagline { padding-right: 10px !important; }
+
+
+
+.midcol { padding-right: 2px !important; }
+
+.content {
+    margin-top: 0px;
+}
+
+body div.content {
+    margin: 16px 350px 0px 25px !important;
+    padding: 0px 0px 0px 0px !important;
+
+    /*
+    background: -webkit-linear-gradient(top, #FBFBFB, whiteSmoke);
+    background: -moz-linear-gradient(top, #FBFBFB, whiteSmoke);
+    */
+
+
+}
+
+.linklisting {
+    bottom: 0px;
+    margin-top: -0px;
+    margin-bottom: 0px !important;
+    margin-left: 0px;
+    margin-right: auto;
+
+    /*background-color: transparent;*/
+    background-color: #FBFBFB;
+    background: -webkit-linear-gradient(top, #FFF, #FBFBFB);
+    background: -moz-linear-gradient(top, #FFF, #FBFBFB);
+    border: 5px solid #c9af74;
+    
+
+}
+
+.commentarea .even {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 5px 10px 10px !important;
+    background: transparent;
+    border-top: 1px solid #EEE;
+}
+.commentarea .odd {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 5px 10px 10px !important;
+    background: transparent;
+    border-top: 1px solid #EEE;
+}
+
+
+.commentarea {
+    position: relative;
+    top: 0px;
+    margin-top: -5px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    margin-right: auto;
+    padding: 0px 0px 7px 0px !important;
+    background-color: #FBFBFB;
+    border: 5px solid;
+    border-color: #c9af74;
+    border-top: 0px;
+}
+.commentarea .menuarea {
+    position: relative;
+    top: 20px;
+    background: #FBFBFB;
+    overflow:visible;
+}
+
+#link-desc {
+    color: #000 !important;
+    text-shadow: none;
+
+    width: 490px;
+
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+
+
+}
+#text-desc {
+    color: #000 !important;
+    text-shadow: none;
+
+    width: 490px;
+
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+
+
+}
+.roundfield {
+    color: #000 !important;
+
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+
+
+}
+
+.title .domain { color: #FFF !important; }
+.title .domain a { color: #13264B !important; }
+.title .domain a:visited { color: #13264B !important; }
+.title .domain a:hover { color: #13264B !important; text-decoration: none; }
+.title .domain a:visited:hover { color: #13264B !important; text-decoration: none; }
+
+.panestack-title {
+    margin-bottom: 10px !important;
+    border: 0px !important;
+    display: none;
+}
+
+.content h1 { margin: 0px 0px 20px 20px !important; }
+#newlink { margin: 0px 0px 0px 20px !important; }
+.formtabs-content { border: 0px !important; }
+.btn button { margin: 0px 0px 0px 20px !important; }
+
+ul.formtab {
+    height: 36px !important;
+    margin: -10px 0px 10px -19px !important;
+}
+ul.formtab li {
+    padding: 0px 0px 0px 0px !important;
+
+}
+
+a.link-button {
+    font-size: 12px !important;
+    margin: 0px 0px 0px 10px;
+}
+a.text-button { 
+    font-size: 12px !important;
+}
+
+.error {
+    padding: 5px;
+}
+
+/* Distinguishing Colors */
+
+.tagline .friend { color: orangeRed !important; }
+.tagline .submitter { color: #13264B !important; }
+.tagline .moderator { color: #282 !important; }
+
+span.rank { display: none; }
+
+.score {
+    padding: 0px 0px 0px 0px !important;
+    margin: 1px 0px 0px 0px !important;
+}
+a.comments {
+    padding: 0px 1px 0px 1px !important;
+    margin: 0px 0px 0px -2px !important;
+}
+
+a.title { color: #13264B !important; }
+a.title:visited { color: #7b6732 !important; }
+a.title:hover { color:#13264B !important; text-decoration: none !important; }
+a.title:visited:hover { color:#7b6732 !important; text-decoration: none !important; }
+
+
+
+/* === Footer =============================================================== */
+
+p.nextprev {
+    font-size: 12px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: -1px;
+
+    width: 800px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding: 0px !important;
+}
+.footer-parent { 
+    width: 758px; 
+    margin: 0 auto;
+    padding: 0px !important;
+}
+.footer {
+    color: #333;
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: -1px;
+
+    width: 758px;
+
+    margin: 0px 0px 20px 0px !important;
+    padding: 0px !important;
+
+    background: #F2F2F2;
+    border: 1px solid #C2C2C2;
+
+
+
+}
+
+.footer .col {
+    font-size: 10px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: -1px;
+
+    width: 95px;
+
+    margin: 0px !important;
+    padding: 10px 10px 10px 20px;
+
+    border-bottom: 1px solid #C2C2C2 !important;
+}
+
+.flat-vert .title {
+    color: #666;
+    display: block;
+    float: none;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+}
+
+.bottommenu {
+    text-align: left;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    font-size: 9px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+
+   padding: 2.5px 0px 2.5px 20px;
+}
+
+.entry .buttons li a { font-weight: normal; }
+
+
+/* === Alternating Link Colors ============================================== */
+
+.even.comment {
+    border-top: 1px solid #EEE !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    border-left: 0px !important;
+
+
+}
+.child .even.comment {
+
+}
+.odd.comment {
+    border-top: 1px solid #EEE !important;
+    border-right: 0px !important;
+    border-bottom: 0px !important;
+    border-left: 0px !important;
+
+
+}
+.child .odd.comment {
+
+}
+
+
+.linklisting .even {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 5px 10px 10px !important;
+    background: transparent;
+    border-top: 1px solid #EEE;
+}
+.linklisting .odd {
+    margin: 0px 0px 0px 0px !important;
+    padding: 10px 5px 10px 10px !important;
+    background: transparent;
+    border-top: 1px solid #EEE;
+}
+
+
+.linklisting .even:first-child {
+    border-top: 0px !important;
+}
+.linklisting .odd:first-child {
+    border-top: 0px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+
+.arrow {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.child {
+    margin: 0px !important;
+    padding: 0px !important;
+
+    border: 0px !important;
+    background: transparent !important;
+}
+
+.comment {
+     padding-left: 6px !important;
+}
+.child {
+    margin: 0px 0px 0px 15px !important;
+}
+.even .comment {
+    margin: 10px 0px 0px 8px !important;
+    padding: 0px 0px 3px 6px !important;
+
+    background: #F7F7F7 !important;
+    border: 0px solid #EEE !important;
+    border-left: 1px solid #CCC !important;
+}
+.odd .comment {
+    margin: 10px 0px 0px 8px !important;
+    padding: 0px 0px 3px 6px !important;
+
+    background: #FFFFFF !important;
+    border: 0px solid #EEE !important;
+    border-left: 1px solid #CCC !important;
+}
+
+div#ad { background-color: transparent !important; }
+div#adlink { background-color: transparent !important; }
+
+form.flairtoggle {
+  background: transparent !important;
+}
+
+/* === RES Style and Fixes ================================================== */
+
+
+.RESshortcutside {
+   position: absolute !important;
+   right: 106px;
+   top: 73px;
+   z-index: 100;
+   border: 0;
+   border-radius: 0;
+}
+
+.RESDashboardToggle {
+   position: absolute !important;
+   right: 25px;
+   top: 75px;
+   z-index: 100;
+   border-radius: 0 !important;
+}
+
+.lcTagged {
+    background-color: transparent !important;
+    outline: 0px !important;
+    border: 0px !important;
+}
+
+.keyHighlight {
+    outline: 0px !important;
+    border: 0px !important;
+    border-right: 1px solid #08C !important;
+}
+.keyNavAnnotation {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+    margin-right: 6px;
+    margin-left: 0px;
+    padding: 0px;
+
+    width: 5px;
+    font-size: 8px;
+    color: #888;
+}
+
+/* Better expando-button alignment with dual sizes */
+.entry .toggleImage.expando-button {
+    margin: 1px 4px 0px 0px;
+    padding: 0px;
+}
+.entry .expando-button {
+    margin: 1px 4px 0px 0px;
+    padding: 0px;
+}
+.usertext-body .expando-button {
+    width: 13px !important;
+    height: 13px !important;
+    padding: 0px 0px 0px 0px !important;
+    margin: 3px 0px 0px 2px !important;
+}
+.usertext-body .expando-button a:hover {
+    text-decoration: none !important;
+}
+
+#srLeftContainer {
+    padding-top: 5px;
+    padding-left: 5px !important;
+    top: -5px;
+    height: 22px;
+
+    background-color: transparent !important;
+    background-image: none !important;
+    margin-right: 0!important;
+}
+div#userbarToggle {
+    left: 0px;
+    width: 16px !important;
+    height: 19px !important;
+
+    margin: 0px !important;
+    padding: 0px !important;
+    padding-bottom: 2px !important;
+
+    color: #A0A0A0;
+    background-color: #FFF;
+    border: 0px !important;
+}
+div.userbarHide {
+    content: "|||";
+}
+/*
+#srDropdown {
+    background-color: transparent !important;
+}
+#srDropdownContainer {
+    background-color: transparent !important;
+}
+div#RESStaticShortcuts a {
+    background-color: transparent !important;
+}
+
+#RESShortcutsEditContainer { display: none; }
+*/
+
+#RESShortcuts {
+    height: 16px;
+    margin-left: 55px;
+    background-color: transparent !important;
+}
+
+#RESShortcutsEditContainer {
+    position: relative !important;
+    float:left;
+    height: 16px;
+    margin-top: 2px;
+    top:-21px!important;
+    background-color: transparent !important;
+    color: black !important;
+}
+#RESShortcutsLeft {
+    width: 16px;
+    background-color: transparent !important;
+    color: #FFF;
+}
+#RESShortcutsAdd {
+    content: "+" !important;
+    width: 16px;
+    background-color: transparent !important;
+}
+#RESShortcutsRight {
+    background-color: transparent !important;
+    content: ">";
+    width: 16px;
+}
+    #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+        color:#999 !important;
+        font-size: 15px!important;
+        }
+/*
+#RESShortcutsAddFormContainer {
+   position: relative !important;
+   left: 264px;
+}
+*/
+
+.RESDashboardToggle {
+    color: #888 !important;
+    background: #F2F2F2 !important;
+    border: 1px solid #D2D2D2 !important;
+}
+.RESshortcut {
+    color: #888 !important;
+    background: #F2F2F2 !important;
+    border: 1px solid #D2D2D2 !important;
+}
+
+.styleToggle {
+    margin-bottom: 10px;
+}
+.NERPageMarker {
+    border: 0px !important;
+    background-color: transparent !important;
+    display: none;
+}
+div#REScommentNavToggle span {
+    margin-left: 0px !important;
+}
+
+/******************************************************
+Up/Down Arrows
+******************************************************/
+.arrow.upmod {
+    background-image: url(%%votes%%);
+    background-position: 0 0
+    }
+.arrow.downmod {
+    background-image: url(%%votes%%);
+    background-position: 0 -22px
+    }
+/******************************************************
+SIDEBAR TABLES (standings, schedule, etc.)
+******************************************************/
+    
+.md table, .md p {
+    margin: 10px 0 !important;
+}
+.md table {
+    margin: 1px 0 1px 0;
+    position: relative;
+    }
+div.side .md table {
+    width: 280px;
+    margin: 3px 0 30px 0;
+    position: relative;
+    }
+.side .md table:nth-of-type(1) th, .side .md table:nth-of-type(4) th {
+    background-color: #13264B;
+    border-left: none;
+    border-right: none
+    }
+.md table th {
+    background-color: #13264B;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    color: #c9af74;
+    font-weight: bold;
+    padding: .5em;
+    text-align: center;
+    text-shadow: 1px 0px 0 #3e3e3e
+    }
+.md tr:nth-of-type(odd) {
+    background: #E7DFCB;
+    color: #363636
+    }
+.md tr:nth-of-type(even) {
+    color: #363636;
+    background: #F2ECDF;
+    }
+
+.md table a {
+    border: 0px;
+    font-weight: bold;
+    color: #222
+    }
+.md table a:hover {
+    color: #147
+    }
+.md table td {
+    font-size: 9px;
+    border: none;
+    padding: .3em;
+    vertical-align: middle
+    }
+.md table td a {
+    color: #27262c ;
+    font-weight: normal
+    }
+.md table td a:hover {
+    color: #1e5a96 ;
+    text-decoration: underline
+    }
+	
+/******************************************************
+HIGHLIGHT RAMS IN THE DIVISION STANDINGS
+******************************************************/
+.side .md table:nth-of-type(1) tr:nth-of-type(9) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(1) tr:nth-of-type(10) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(1) tr:nth-of-type(11) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+/******************************************************
+BOLD RAMS IN THE DIVISION STANDINGS
+******************************************************/
+.md table:nth-of-type(1) tr:nth-of-type(9) td a {
+    font-weight: bold
+    }
+.md table:nth-of-type(1) tr:nth-of-type(10) td a {
+    font-weight: bold
+    }
+.md table:nth-of-type(1) tr:nth-of-type(11) td a {
+    font-weight: bold
+    }
+	
+/******************************************************
+HIGHLIGHT WINS LOSSES ON SCHEDULE
+******************************************************/
+/*
+.side .md table:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(5) {
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(4) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(5) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(6) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(7) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(8) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(10) td:nth-of-type(5){
+    background: #E9C2A6;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(11) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(12) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(13) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(14) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(15) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(16) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+.side .md table:nth-of-type(2) tr:nth-of-type(17) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+*/
+
+/******************************************************
+SUB TITLE BAR FOR DRAFT ORDER AND HIGHLIGHTING
+******************************************************/
+
+.side .md table:nth-of-type(2) td:nth-of-type(2){
+    width: 200px;
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(16) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(22) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+
+/******************************************************
+NFL LOGOS
+******************************************************/
+/* Team logos for use in comments */
+a[href="/ARI"]:before, a[href$="/r/azcardinals"]:before, a[href="/ATL"]:before, a[href$="/r/falcons"]:before, a[href="/BAL"]:before, a[href$="/r/ravens"]:before, a[href="/BUF"]:before, a[href$="/r/buffalobills"]:before, a[href="/CAR"]:before, a[href$="/r/panthers"]:before, a[href="/CHI"]:before, a[href$="/r/chibears"]:before, a[href="/CIN"]:before, a[href$="/r/cinbengals"]:before, a[href$="/r/bengals"]:before, a[href="/CLE"]:before, a[href$="/r/browns"]:before, a[href="/DAL"]:before, a[href$="/r/cowboys"]:before, a[href="/DEN"]:before, a[href$="/r/denverbroncos"]:before, a[href="/DET"]:before, a[href$="/r/detroitlions"]:before, a[href="/GB"]:before, a[href$="/r/greenbaypackers"]:before, a[href="/HOU"]:before, a[href$="/r/texans"]:before, a[href="/IND"]:before, a[href$="/r/colts"]:before, a[href="/JAC"]:before, a[href$="/r/jaguars"]:before, a[href="/KC"]:before, a[href$="/r/kansascitychiefs"]:before, a[href="/MIA"]:before, a[href$="/r/miamidolphins"]:before, a[href="/MIN"]:before, a[href$="/r/minnesotavikings"]:before, a[href="/NE"]:before, a[href$="/r/patriots"]:before, a[href="/NO"]:before, a[href$="/r/saints"]:before, a[href="/NYG"]:before, a[href$="/r/nygiants"]:before, a[href="/NYJ"]:before, a[href$="/r/nyjets"]:before, a[href="/OAK"]:before, a[href$="/r/oaklandraiders"]:before, a[href="/PHI"]:before, a[href$="/r/eagles"]:before, a[href="/PIT"]:before, a[href$="/r/steelers"]:before, a[href="/SD"]:before, a[href$="/r/chargers"]:before, a[href="/SF"]:before, a[href$="/r/49ers"]:before, a[href="/SEA"]:before, a[href$="/r/seahawks"]:before, a[href="/STL"]:before, a[href$="/r/stlouisrams"]:before, a[href="/TB"]:before, a[href$="/r/buccaneers"]:before, a[href="/TEN"]:before, a[href$="r/tennesseetitans"]:before, a[href="/WAS"]:before, a[href$="/r/redskins"]:before, a[href="/NFC"]:before, a[href="/AFC"]:before, a[href="/NFL"]:before, .content a[href$="/r/nfl"]:before, a[href="/OIL"]:before {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(%%nfl-teams-square%%);
+    background-position: -9999px -9999px;
+    vertical-align: middle;
+    margin-right: 3px;
+    content: ""
+    }
+
+
+/* TEAMS */
+/* [ARI] Arizona Cardinals */
+a[href="/ARI"]:nth-of-type(n):before, a[href$="/r/azcardinals"]:nth-of-type(n):before, .flair-cardinals:before {
+    
+	height:16px;
+	width:30px;
+	background-position: 0 -576px 
+    }
+/* [ATL] Atlanta Falcons */
+a[href="/ATL"]:nth-of-type(n):before, a[href$="/r/falcons"]:nth-of-type(n):before, .flair-falcons:before {
+	height:16px;
+	width:30px;
+	background-position: 0 -112px 
+    }
+/* [BAL] Baltimore Ravens */
+a[href="/BAL"]:nth-of-type(n):before, a[href$="/r/ravens"]:nth-of-type(n):before, .flair-ravens:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -432px 
+    }
+/* [BUF] Buffalo Bills */
+a[href="/BUF"]:nth-of-type(n):before, a[href$="/r/buffalobills"]:nth-of-type(n):before, .flair-bills:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -496px 
+    }
+/* [CAR] Carolina Panthers */
+a[href="/CAR"]:nth-of-type(n):before, a[href$="/r/panthers"]:nth-of-type(n):before, .flair-panthers:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -96px 
+    }
+/* [CHI] Chicago Bears */
+a[href="/CHI"]:nth-of-type(n):before, a[href$="/r/chibears"]:nth-of-type(n):before, .flair-bears:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -176px 
+    }
+/* [CIN] Cincinatti Bengals */
+a[href="/CIN"]:nth-of-type(n):before, a[href$="/r/cinbengals"]:nth-of-type(n):before, a[href$="/r/bengals"]:nth-of-type(n):before, .flair-bengals:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -416px 
+    }
+/* [CLE] Cleveland Browns */
+a[href="/CLE"]:nth-of-type(n):before, a[href$="/r/browns"]:nth-of-type(n):before, .flair-browns:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -400px 
+    }
+/* [DAL] Dallas Cowboys */
+a[href="/DAL"]:nth-of-type(n):before, a[href$="/r/cowboys"]:nth-of-type(n):before, .flair-cowboys:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -240px 
+    }
+/* [DEN] Denver Broncos */
+a[href="/DEN"]:nth-of-type(n):before, a[href$="/r/denverbroncos"]:nth-of-type(n):before, .flair-broncos:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -304px 
+    }
+/* [DET] Detroit Lions */
+a[href="/DET"]:nth-of-type(n):before, a[href$="/r/detroitlions"]:nth-of-type(n):before, .flair-lions:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -160px 
+    }
+/* [GB] #13264B Bay Packers */
+a[href="/GB"]:nth-of-type(n):before, a[href$="/r/greenbaypackers"]:nth-of-type(n):before, .flair-packers:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -144px 
+    }
+/* [HOU] Houston Texans */
+a[href="/HOU"]:nth-of-type(n):before, a[href$="/r/texans"]:nth-of-type(n):before, .flair-texans:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -368px 
+    }
+/* [IND] Indianoplis Colts */
+a[href="/IND"]:nth-of-type(n):before, a[href$="/r/colts"]:nth-of-type(n):before, .flair-colts:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -352px 
+    }
+/* [JAC] Jacksonville Jaguars */
+a[href="/JAC"]:nth-of-type(n):before, a[href$="/r/jaguars"]:nth-of-type(n):before, .flair-jaguars:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -336px 
+    }
+/* [KC] Kansas City Chiefs */
+a[href="/KC"]:nth-of-type(n):before, a[href$="/r/kansascitychiefs"]:nth-of-type(n):before, .flair-chiefs:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -288px 
+    }
+/* [MIA] Miami Dolphins */
+a[href="/MIA"]:nth-of-type(n):before, a[href$="/r/miamidolphins"]:nth-of-type(n):before, .flair-dolphins:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -480px 
+    }
+/* [MIN] Minnesota Vikings */
+a[href="/MIN"]:nth-of-type(n):before, a[href$="/r/minnesotavikings"]:nth-of-type(n):before, .flair-vikings:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -128px 
+    }
+/* [NE] New England Patriots */
+a[href="/NE"]:nth-of-type(n):before, a[href$="/r/patriots"]:nth-of-type(n):before, .flair-patriots:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -464px 
+    }
+/* [NO] New Orleans Saints */
+a[href="/NO"]:nth-of-type(n):before, a[href$="/r/saints"]:nth-of-type(n):before, .flair-saints:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -80px 
+    }
+/* [NYG] New York Giants */
+a[href="/NYG"]:nth-of-type(n):before, a[href$="/r/nygiants"]:nth-of-type(n):before, .flair-giants:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -224px 
+    }
+/* [NYJ] New York Jets */
+a[href="/NYJ"]:nth-of-type(n):before, a[href$="/r/nyjets"]:nth-of-type(n):before, .flair-jets:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -448px 
+    }
+/* [OAK] Oakland Raiders */
+a[href="/OAK"]:nth-of-type(n):before, a[href$="/r/oaklandraiders"]:nth-of-type(n):before, .flair-raiders:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -272px 
+    }
+/* [PHI] Philadelphia Eagles */
+.flair-eagles:before, a[href="/PHI"]:nth-of-type(n):before, a[href$="/r/eagles"]:nth-of-type(n):before {
+    height:16px;
+	width:30px;
+    background-position: 0 -208px 
+    }
+/* [PIT] Pittsburgh Steelers */
+a[href="/PIT"]:nth-of-type(n):before, a[href$="/r/steelers"]:nth-of-type(n):before, .flair-steelers:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -384px 
+    }
+/* [SD] San Diego Chargers*/
+a[href="/SD"]:nth-of-type(n):before, a[href$="/r/chargers"]:nth-of-type(n):before, .flair-chargers:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -256px 
+    }
+/* [SF] San Francisco 49ers */
+a[href="/SF"]:nth-of-type(n):before, a[href$="/r/49ers"]:nth-of-type(n):before, .flair-fortyniners:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -32px 
+    }
+/* [SEA] Seattle Seahawks */
+a[href="/SEA"]:nth-of-type(n):before, a[href$="/r/seahawks"]:nth-of-type(n):before, .flair-seahawks:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -16px 
+    }
+/* [STL] St. Louis Rams */
+a[href="/STL"]:nth-of-type(n):before, a[href$="/r/stlouisrams"]:nth-of-type(n):before, .flair-rams:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -512px 
+    }
+/* [TB] Tampa Bay Buccaneers */
+a[href="/TB"]:nth-of-type(n):before, a[href$="/r/buccaneers"]:nth-of-type(n):before, .flair-buccaneers:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -64px 
+    }
+/* [TEN] Tennessee Titans */
+a[href="/TEN"]:nth-of-type(n):before, a[href$="/r/tennesseetitans"]:nth-of-type(n):before, .flair-titans:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -320px 
+    }
+/* [WAS] Washington Redskins */
+a[href="/WAS"]:nth-of-type(n):before, a[href$="/r/redskins"]:nth-of-type(n):before, .flair-redskins:before {
+    height:16px;
+	width:30px;
+    background-position: 0 -192px 
+    }
+/* [NFL] National Football League */
+a[href="/NFL"]:nth-of-type(n):before, a[href$="/r/nfl"]:nth-of-type(n):before, .flair-nfl:before {
+    height:16px;
+	width:30px;
+    background-position: 0 0px 
+    }
+
+/*END OF TEAMS*/
+/******************************************************
+EMOTICONS!!! :))))))))))
+******************************************************/
+a[href="/happy"]:after, a[href="/sad"]:after, a[href="/angry"]:after, a[href="/worried"]:after, a[href="/jk"]:after, a[href="/indifferent"]:after, a[href="/meanmug"]:after, a[href="/bucktooth"]:after, a[href="/joy"]:after, a[href="/sly"]:after, a[href="/dazed"]:after, a[href="/cool"]:after, a[href="/suave"]:after, a[href="/crying"]:after, a[href="/dead"]:after, a[href="/dizzy"]:after, a[href="/calm"]:after, a[href="/drunk"]:after, a[href="/blushing"]:after, a[href="/evil"]:after, a[href="/grin"]:after, a[href="/notsureifserious"]:after, a[href="/laugh"]:after, a[href="/smh"]:after, a[href="/smile"]:after, a[href="/rolleyes"]:after, a[href="/sadder"]:after, a[href="/annoyed"]:after, a[href="/speechless"]:after, a[href="/shocked"]:after, a[href="/dontcare"]:after, a[href="/bored"]:after, a[href="/smirk"]:after, a[href="/unsure"]:after, a[href="/smug"]:after, a[href="/snooze"]:after, a[href="/reallyangry"]:after, a[href="/surprised"]:after, a[href="/brow"]:after, a[href="/uhoh"]:after, a[href="/optimistic"]:after, a[href="/shook"]:after, a[href="/lipssealed"]:after, a[href="/bomb"]:after, a[href="/confused"]:after, a[href="/pimp"]:after, a[href="/batman"]:after, a[href="/thumbsdown"]:after, a[href="/thumbsup"]:after, a[href="/furious"]:after, a[href="/deal"]:after, a[href="/smoking"]:after, a[href="/computer"]:after, a[href="/hang"]:after, a[href="/monocle"]:after {
+    width: 15px;
+    height: 15px;
+    content: "";
+    background-image: url(%%smileys%%);
+    display: inline-block;
+    vertical-align: -1px
+    }
+a[href="/happy"]:after {
+    background-position: 0 0;
+    width: 15px;
+    height: 15px
+    }
+a[href="/sad"]:after {
+    background-position: 0 -15px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/angry"]:after {
+    background-position: 0 -30px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/worried"]:after {
+    background-position: 0 -45px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/jk"]:after {
+    background-position: 0 -60px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/indifferent"]:after {
+    background-position: 0 -75px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/meanmug"]:after {
+    background-position: 0 -90px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/bucktooth"]:after {
+    background-position: 0 -105px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/joy"]:after {
+    background-position: 0 -120px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/sly"]:after {
+    background-position: 0 -135px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/dazed"]:after {
+    background-position: 0 -150px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/cool"]:after {
+    background-position: 0 -165px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/suave"]:after {
+    background-position: 0 -180px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/crying"]:after {
+    background-position: 0 -195px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/dead"]:after {
+    background-position: 0 -210px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/dizzy"]:after {
+    background-position: 0 -225px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/calm"]:after {
+    background-position: 0 -240px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/drunk"]:after {
+    background-position: 0 -255px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/blushing"]:after {
+    background-position: 0 -270px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/evil"]:after {
+    background-position: 0 -285px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/grin"]:after {
+    background-position: 0 -300px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/notsureifserious"]:after {
+    background-position: 0 -315px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/laugh"]:after {
+    background-position: 0 -330px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/smh"]:after {
+    background-position: 0 -345px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/smile"]:after {
+    background-position: 0 -360px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/rolleyes"]:after {
+    background-position: 0 -375px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/sadder"]:after {
+    background-position: 0 -390px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/annoyed"]:after {
+    background-position: 0 -405px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/speechless"]:after {
+    background-position: 0 -420px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/shocked"]:after {
+    background-position: 0 -435px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/dontcare"]:after {
+    background-position: 0 -450px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/bored"]:after {
+    background-position: 0 -465px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/smirk"]:after {
+    background-position: 0 -480px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/unsure"]:after {
+    background-position: 0 -495px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/smug"]:after {
+    background-position: 0 -510px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/snooze"]:after {
+    background-position: 0 -525px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/reallyangry"]:after {
+    background-position: 0 -540px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/surprised"]:after {
+    background-position: 0 -555px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/brow"]:after {
+    background-position: 0 -570px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/uhoh"]:after {
+    background-position: 0 -585px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/optimistic"]:after {
+    background-position: 0 -600px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/shook"]:after {
+    background-position: 0 -615px;
+    width: 15px;
+    height: 15px
+    }
+a[href="/lipssealed"]:after {
+    background-position: 0 -630px;
+    width: 15px;
+    height: 16px
+    }
+a[href="/bomb"]:after {
+    background-position: 0 -646px;
+    width: 22px;
+    height: 15px
+    }
+a[href="/confused"]:after {
+    background-position: 0 -661px;
+    width: 15px;
+    height: 22px
+    }
+a[href="/pimp"]:after {
+    background-position: 0 -683px;
+    width: 22px;
+    height: 23px
+    }
+a[href="/batman"]:after {
+    background-position: 0 -706px;
+    width: 15px;
+    height: 17px
+    }
+a[href="/thumbsdown"]:after {
+    background-position: 0 -723px;
+    width: 23px;
+    height: 22px
+    }
+a[href="/thumbsup"]:after {
+    background-position: 0 -745px;
+    width: 23px;
+    height: 18px
+    }
+a[href="/furious"]:after {
+    background-position: 0 -763px;
+    width: 33px;
+    height: 31px
+    }
+a[href="/deal"]:after {
+    background-position: 0 -794px;
+    width: 23px;
+    height: 23px
+    }
+a[href="/smoking"]:after {
+    background-position: 0 -817px;
+    width: 19px;
+    height: 19px
+    }
+a[href="/computer"]:after {
+    background-position: 0 -836px;
+    width: 48px;
+    height: 20px
+    }
+a[href="/hang"]:after {
+    background-position: 0 -856px;
+    width: 33px;
+    height: 60px
+    }
+a[href="/monocle"]:after {
+    background-position: 0 -916px;
+    width: 17px;
+    height: 25px
+    }
+	
+/******************************************************
+FLAIR
+******************************************************/
+
+.content .link .flair {
+    border: 0 none;
+    float: left;
+    margin-top: 0;
+}
+
+.flairselector .customizer {
+display: none ;
+}
+
+.flair {
+border: none ;
+top:20px;
+padding:0px;
+background: url(%%spritesheet%%);
+display:inline-block;
+}
+
+.flair-49ers-icon{ background-position: 0 0; width: 32px; height: 32px; } 
+.flair-AFC-icon{ background-position: 0 -82px; width: 32px; height: 32px; } 
+.flair-Bears-icon{ background-position: 0 -164px; width: 32px; height: 32px; } 
+.flair-Bengals-icon{ background-position: 0 -246px; width: 32px; height: 32px; } 
+.flair-Bills-icon{ background-position: 0 -328px; width: 32px; height: 32px; } 
+.flair-Broncos-icon{ background-position: 0 -410px; width: 32px; height: 32px; } 
+.flair-Browns-icon{ background-position: 0 -492px; width: 32px; height: 32px; } 
+.flair-Buccaneers-icon{ background-position: 0 -574px; width: 32px; height: 32px; } 
+.flair-Cardinals-icon{ background-position: 0 -656px; width: 32px; height: 32px; } 
+.flair-Chargers-icon{ background-position: 0 -738px; width: 32px; height: 32px; } 
+.flair-Chiefs-icon{ background-position: 0 -820px; width: 32px; height: 32px; } 
+.flair-Colts-icon{ background-position: 0 -902px; width: 32px; height: 32px; } 
+.flair-Cowboys-icon{ background-position: 0 -984px; width: 32px; height: 32px; } 
+.flair-Dolphins-icon{ background-position: 0 -1066px; width: 32px; height: 32px; } 
+.flair-Eagles-icon{ background-position: 0 -1148px; width: 32px; height: 32px; } 
+.flair-Falcons-icon{ background-position: 0 -1230px; width: 32px; height: 32px; } 
+.flair-Jaguars-icon{ background-position: 0 -1312px; width: 32px; height: 32px; } 
+.flair-Jets-icon{ background-position: 0 -1394px; width: 32px; height: 32px; } 
+.flair-Lions-icon{ background-position: 0 -1476px; width: 32px; height: 32px; } 
+.flair-Miami{ background-position: 0 -1558px; width: 30px; height: 17px; } 
+.flair-NFC-icon{ background-position: 0 -1625px; width: 32px; height: 32px; } 
+.flair-NFL-icon{ background-position: 0 -1707px; width: 32px; height: 32px; } 
+.flair-Packers-icon{ background-position: 0 -1789px; width: 32px; height: 32px; } 
+.flair-Panthers-icon{ background-position: 0 -1871px; width: 32px; height: 32px; } 
+.flair-Patriots-icon{ background-position: -82px 0; width: 32px; height: 32px; } 
+.flair-Raiders-icon{ background-position: -82px -82px; width: 32px; height: 32px; } 
+.flair-Rams-icon{ background-position: -82px -164px; width: 32px; height: 32px; } 
+.flair-Ravens-icon{ background-position: -82px -246px; width: 32px; height: 32px; } 
+.flair-Redskins-icon{ background-position: -82px -328px; width: 32px; height: 32px; } 
+.flair-Saints-icon{ background-position: -82px -410px; width: 32px; height: 32px; } 
+.flair-Seahawks-icon{ background-position: -82px -492px; width: 32px; height: 32px; } 
+.flair-Steelers-icon{ background-position: -82px -574px; width: 32px; height: 32px; } 
+.flair-Texans-icon{ background-position: -82px -656px; width: 32px; height: 32px; } 
+.flair-Titans-icon{ background-position: -82px -738px; width: 32px; height: 32px; } 
+.flair-Vikings-icon{ background-position: -82px -820px; width: 32px; height: 32px; } 
+.flair-arizona{ background-position: -82px -902px; width: 30px; height: 16px; } 
+.flair-flair0{ background-position: -82px -968px; width: 30px; height: 23px; } 
+.flair-flair1{ background-position: -82px -1041px; width: 40px; height: 30px; } 
+.flair-flair2{ background-position: -82px -1121px; width: 38px; height: 30px; } 
+.flair-flair3{ background-position: -82px -1201px; width: 42px; height: 30px; } 
+.flair-flair4{ background-position: -82px -1281px; width: 25px; height: 30px; } 
+.flair-flair5{ background-position: -82px -1361px; width: 33px; height: 30px; } 
+.flair-flair6{ background-position: -82px -1441px; width: 29px; height: 30px; } 
+.flair-flair7{ background-position: -82px -1521px; width: 40px; height: 40px; } 
+.flair-flair8{ background-position: -82px -1611px; width: 58px; height: 30px; } 
+.flair-flair9{ background-position: -82px -1691px; width: 30px; height: 30px; } 
+.flair-horn{ background-position: -82px -1771px; width: 40px; height: 27px; } 
+.flair-jersey-retro{ background-position: -82px -1848px; width: 32px; height: 26px; } 
+.flair-jersey-retro13{ background-position: -82px -1924px; width: 32px; height: 26px; } 
+.flair-jersey-retro28{ background-position: -190px 0; width: 32px; height: 26px; } 
+.flair-jersey-retro29{ background-position: -190px -76px; width: 32px; height: 26px; } 
+.flair-jersey-retro76{ background-position: -190px -152px; width: 32px; height: 26px; } 
+.flair-jersey-retro80{ background-position: -190px -228px; width: 32px; height: 26px; } 
+.flair-jersey-retro81{ background-position: -190px -304px; width: 32px; height: 26px; } 
+.flair-jersey-retro85{ background-position: -190px -380px; width: 32px; height: 26px; } 
+.flair-jersey{ background-position: -190px -456px; width: 32px; height: 26px; } 
+.flair-jersey16{ background-position: -190px -532px; width: 32px; height: 26px; } 
+.flair-jersey21{ background-position: -190px -608px; width: 32px; height: 26px; } 
+.flair-jersey31{ background-position: -190px -684px; width: 32px; height: 26px; } 
+.flair-jersey39{ background-position: -190px -760px; width: 32px; height: 26px; } 
+.flair-jersey4{ background-position: -190px -836px; width: 32px; height: 26px; } 
+.flair-jersey55{ background-position: -190px -912px; width: 32px; height: 26px; } 
+.flair-jersey6{ background-position: -190px -988px; width: 32px; height: 26px; } 
+.flair-jersey8{ background-position: -190px -1064px; width: 32px; height: 26px; } 
+.flair-jersey91{ background-position: -190px -1140px; width: 32px; height: 26px; } 
+.flair-jersey94{ background-position: -190px -1216px; width: 32px; height: 26px; } 
+.flair-seahwks{ background-position: -190px -1292px; width: 30px; height: 13px; } 
+
+
+.listing-page .infobar  {
+display: none !important;
+}
