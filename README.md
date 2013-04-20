@@ -32,6 +32,6 @@ Files:
 - votes
 - keep-calm
 - Search-Simple
-dot
-Arrow-Comment-Close-E
-Arrow-Comment-Open-E
+- dot
+- Arrow-Comment-Close-E
+- Arrow-Comment-Open-E
