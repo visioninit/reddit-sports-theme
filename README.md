@@ -17,6 +17,7 @@ Operations:
 Ideally, we will have a setup where moderators only need to make quick changes on the sidebar to provide weekly updates.
 
 Moderator Updates Template: http://www.reddit.com/r/subreddit/about/edit/
+
 Moderator Uploads Images: http://www.reddit.com/r/subreddit/about/stylesheet
 
 Files: 
