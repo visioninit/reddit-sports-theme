@@ -24,8 +24,13 @@ Ideally, we will have a setup where moderators only need to make quick changes o
 
 Files: 
 
+Text
+
 - sidebar.txt <-- code for sidebar (moderator area)
 - style.css <-- css for page layout (break it out into different sections)
+
+Images 
+
 - Menubar-Gray-Wide
 - side-logobg-550hx300w
 - side-submit-SB8
