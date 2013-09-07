@@ -3,10 +3,6 @@
    by Positronic_Matrix.  Modified by radium-v, BaconOverdose and Rolmos.
 
    Version: 24 Sep. 2012 (Rolmos)
-
-   Heavily edited and reused for /r/StLouisRams 
-
-   Version: 24-sports 2013 (mrinfo)
 */
 /*!
  * Color Scheme
@@ -15,6 +11,43 @@
  * Retro Blue = #104E8B
  * Retro Yello = #ffcc11
  */
+
+/*!
+Pick | Team | Player Selected |
+:--:|:--|:--|:--|:--
+1|[](/r/kansascitychiefs)|OT Eric Fisher, Central Michigan|
+2|[](/r/jaguars)|OT Luke Joeckel, Texas A & M|
+3|[](/r/miamidolphins)trade from Oakland|DE Dion Jordan, Oregon|
+4|[](/r/eagles)|OT Lane Johnson, Oklahoma|
+5|[](/r/detroitlions)|DE Ezekiel Ansah, BYU|
+6|[](/r/browns)|DE Barkevious Mingo, LSU|
+7|[](/r/azcardinals)|G Johnathan Cooper, UNC|
+8|[](/r/stlouisrams)trade from Buffalo|WR Tavon Austin, West Virginia|
+9|[](/r/nyjets)|CB Dee Millner, Alabama|
+10|[](/r/tennesseetitans)|G Chance Warmack, Alabama|
+11|[](/r/chargers)|OT D.J. Fluker, Alabama|
+12|[](/r/oaklandraiders)trade from Miami|CB DJ Hayden, Houston|
+13|[](/r/nyjets)|DT Sheldon Richardson, Missouri|
+14|[](/r/panthers)|DT Star Lotulelei, Utah|
+15|[](/r/saints)|S Kenny Vaccaro, Texas|
+16|[](/r/buffalobills)trade from St. Louis|QB E.J. Manuel, FSU|
+17|[](/r/steelers)|OLB Jarvis Jones, Georgia|
+18|[](/r/49ers)trade from Dallas|S Eric Reid, LSU|
+19|[](/r/nygiants)|G Justin Pugh, Syracuse|
+20|[](/r/chibears)|G Kyle Long, Oregon|
+21|[](/r/cinbengals)|TE Tyler Eifert, Notre Dame|
+22|[](/r/falcons)trade from St. Louis|CB Desmond Trufant, Washington|
+23|[](/r/minnesotavikings)|DT Sharrif Floyd, Florida|
+24|[](/r/colts)|DE Bjoern Werner, Florida State|
+25|[](/r/minnesotavikings) |CB Xavier Rhodes, Florida State|
+26|[](/r/greenbaypackers)|DE Datone Jones, UCLA|
+27|[](/r/texans)|WR DeAndre Hopkins, Clemson|
+28|[](/r/denverbroncos)|DT Sylvester Williams, North Carolina|
+29|[](/r/minnesotavikings)trade from New England|WR Cordarrelle Patterson, Tennessee|
+30|[](/r/stlouisrams)trade from Atlanta|LB Alec Ogletree, Georgia|
+31|[](/r/cowboys)trade from San Francisco|C Travis Frederick, Wisconsin|
+32|[](/r/ravens)|S Matt Elam, LSU|
+*/
 
 /*!
 Team | W-L-T | ST | DIV | PF | PA 
@@ -26,23 +59,23 @@ Team | W-L-T | ST | DIV | PF | PA
 
 W | Date |  | Opponent | Result
 :--:|:--|:--:|:--|:--
-**1** | Sun 9/9 |@| [Lions     ](/r/detroitlions) | L 23-27
-**2** | Sun 9/16 |vs| [Redskins](/r/redskins) | W 31-28
-**3** | Sun 9/23 |@| [Bears](/r/chibears) | L 6-23 
-**4** | Sun 9/30 |vs| [Seahawks](/r/seahawks) | W 19-13
-**5** | Thurs10/4 |vs|  [Cardinals](/r/azcardinals) | W 17-3
-**6**  | Sun 10/14 |@|  [Dolphins](/r/miamidolphins) | L 17-14
-**7** | Sun 10/21 |vs| [Packers](/r/greenbaypackers) | L 20-30
-**8** | Sun 10/28 |@ UK| [Patriots](/r/patriots) | L 7-45
-**9** | *Bye* | | |
-**10** | Sun 11/11 |@| [49ers](/r/49ers) | T 24-24
-**11** | Sun 11/18 |vs| [Jets](/r/nyjets) | L 13-27
-**12** | Sun 11/25 |@| [Cardinals](/r/azcardinals) | W 31-17
-**13** | Sun 12/2 |vs| [49ers](/r/49ers) | W 16-13
-**14** | Sun 12/9 |@| [Bills](/r/buffalobills) | W 15-12
-**15** | Sun 12/16 |vs| [Vikings](/r/minnesotavikings) | L 22-36
-**16** | Sun 12/23 |@| [Buccaneers](/r/buccaneers) | W 28-13
-**17** | Sun 12/30 |@| [Seahawks](/r/seahawks) | L 13-20
+**1** | Sun 9/8 |vs| [Cardinals](/r/azcardinals) |
+**2** | Sun 9/15 |@| [Falcons](/r/falcons) |
+**3** | Sun 9/22 |@| [Cowboys](/r/cowboys) |
+**4** | Thurs 9/26 |vs| [49ers](/r/49ers) |
+**5** | Sun 10/6 |vs|  [Jaguars](/r/jaguars) |
+**6**  | Sun 10/13|@|  [Texans](/r/texans) |
+**7** | Sun 10/20 |@| [Panthers](/r/panthers) |
+**8** | Monday 10/28 |vs| [Seahawks](/r/seahawks) |
+**9** | Sun 11/3 |vs|  [Titans](/r/tennesseetitans)|
+**10** | Sun 11/10 |@| [Colts](/r/colts) |
+**11** | *Bye* || |
+**12** | Sun 11/24 |vs| [Bears](/r/chibears) |
+**13** | Sun 12/1 |@| [49ers](/r/49ers) |
+**14** | Sun 12/8 |@| [Cardinals](/r/azcardinals) |
+**15** | Sun 12/15 |vs| [Saints](/r/saints) |
+**16** | Sun 12/22 |vs| [Buccaneers](/r/buccaneers) |
+**17** | Sun 12/29 |@| [Seahawks](/r/seahawks) |
 */
 
 .titlebox .leavemoderator,
@@ -119,7 +152,7 @@ border: 0;
     height: 36px;
     background-image: url(%%Menubar-Gray-Wide%%);
     background-position: -103px -36px;
-  text-shadow: 0px -1px 0px #383838;
+	text-shadow: 0px -1px 0px #383838;
 }
 .titlebox .usertext-body .md ol li:nth-child(1) a {
     width: 100px;
@@ -566,7 +599,7 @@ div.titlebox .subscribers span.number:before,
 SIDEBAR PICTURE
 ***************************************************/
 .side a[href$='#potw'] {
-    background-image:url(%%keep-calm%%);
+    background-image:url(%%Quinn-at-ARI%%);
     background-position:center;
     width:280px;
     height: 200px;
@@ -1175,15 +1208,15 @@ body div.content {
     margin-bottom: 0px !important;
     margin-left: 0px !important;
     margin-right: auto;
-    padding: 0px 0px 7px 0px !important;
+    padding: 0px 10px 7px 0px !important;
     background-color: #FBFBFB;
     border: 5px solid;
     border-color: #c9af74;
     border-top: 0px;
 }
 .commentarea .menuarea {
+    top: 0px;
     position: relative;
-    top: 20px;
     background: #FBFBFB;
     overflow:visible;
 }
@@ -1713,7 +1746,7 @@ div.side .md table {
 /******************************************************
 HIGHLIGHT RAMS IN THE DIVISION STANDINGS
 ******************************************************/
-.side .md table:nth-of-type(1) tr:nth-of-type(9) {
+.side .md table:nth-of-type(1) tr:nth-of-type(12) {
     background: #c9af74;
     background-position: top left;
     background-repeat: no-repeat
@@ -1744,13 +1777,32 @@ BOLD RAMS IN THE DIVISION STANDINGS
 /******************************************************
 HIGHLIGHT WINS LOSSES ON SCHEDULE
 ******************************************************/
-/*
-.side .md table:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(5) {
+.side .md table:nth-of-type(2) tr:nth-of-type(1) td:nth-of-type(5){
     background: #CD5C5C;
     background-position: top left;
     background-repeat: no-repeat
     }
 .side .md table:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(3) td:nth-of-type(5){
+    background: #CD5C5C;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(4) td:nth-of-type(5){
+    background: #A6D785;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+.side .md table:nth-of-type(2) tr:nth-of-type(5) {
+    background: #c9af74;
+    background-position: top left;
+    background-repeat: no-repeat
+    }
+/*.side .md table:nth-of-type(2) tr:nth-of-type(2) td:nth-of-type(5){
     background: #A6D785;
     background-position: top left;
     background-repeat: no-repeat
@@ -1839,19 +1891,19 @@ HIGHLIGHT WINS LOSSES ON SCHEDULE
 SUB TITLE BAR FOR DRAFT ORDER AND HIGHLIGHTING
 ******************************************************/
 
-.side .md table:nth-of-type(2) td:nth-of-type(2){
+/*.side .md table:nth-of-type(2) td:nth-of-type(2){
     width: 200px;
     }
-.side .md table:nth-of-type(2) tr:nth-of-type(16) {
+.side .md table:nth-of-type(2) tr:nth-of-type(18) {
     background: #c9af74;
     background-position: top left;
     background-repeat: no-repeat
     }
-.side .md table:nth-of-type(2) tr:nth-of-type(22) {
+.side .md table:nth-of-type(2) tr:nth-of-type(30) {
     background: #c9af74;
     background-position: top left;
     background-repeat: no-repeat
-    }
+    }*/
 
 /******************************************************
 NFL LOGOS
